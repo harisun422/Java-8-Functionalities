@@ -1,9 +1,13 @@
 package versionEight;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map.Entry;
+import java.util.stream.Collectors;
 
 @FunctionalInterface
 interface abc{
@@ -48,11 +52,19 @@ public class TestMaventutorial implements Runnable{
 	for(Entry<Integer,String> I  : hm.entrySet()){
 	{
 		System.out.println(I);
-		
+	}
 	}
 	
+	
+	
+	//Practicing Streams
+	List<Integer>  al = Arrays.asList(3,5,2,7,4);
 
+	
+	//HashMap<Integer,String> hs = hm.st
+	hm.entrySet().stream().forEach(x->System.out.println(x.getValue()));
+	//System.out.println(nes);
 	}
-	}
+	//nes = al.stream().map()
 }
 
